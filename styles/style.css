@@ -167,7 +167,7 @@ nav {
   align-items: center;
 }
 .our-partners img {
-  width: 100%;
+  /* width: 100%; */
   cursor: pointer;
   transition: 0.3s;
 }
@@ -288,14 +288,17 @@ footer {
     flex-direction: column;
   }
   .nav-menu {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    /* grid-template-columns: repeat(4, 1fr); */
     gap: 20px;
   }
   .our-partners {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(4, 1fr);
     margin-top: 20px;
     text-align: center;
     border: none;
