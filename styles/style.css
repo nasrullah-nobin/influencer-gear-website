@@ -151,49 +151,60 @@ nav {
   text-align: center;
 }
 .popular-heading {
-    font-size: var(--text-2xl);
-    color: var(--dark-gray);
+  font-size: var(--text-2xl);
+  color: var(--dark-gray);
   margin-bottom: 28px;
 }
 .popular-card-box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 45px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
 }
 .popular-card {
-    max-width: 329px;
-    text-align: left;
-    background-color: white;
-    padding: 17px 14px;
-    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
+    width: 100%;
+  /* max-width: 329px; */
+  text-align: left;
+  background-color: white;
+  padding: 17px 14px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
 }
 .popular-card img {
-    width: 100%;
+  width: 100%;
 }
 .card-heading {
-    line-height: 40px;
-    font-weight: 500;
-    font-size: var(--text-lg);
-    margin-bottom: 6px;
+  line-height: 40px;
+  font-weight: 500;
+  font-size: var(--text-lg);
+  margin-bottom: 6px;
 }
 .card-prize {
-    margin-bottom: 14px;
-    font-weight: 400;
-    font-family: var(--inter-font);
-    font-size: var(--text-md);
+  margin-bottom: 14px;
+  font-weight: 400;
+  font-family: var(--inter-font);
+  font-size: var(--text-md);
 }
 .star {
-    font-size: var(--text-xs);
-   color: rgba(251, 130, 0, 1);
-   margin-bottom: 10px;
+  font-size: var(--text-xs);
+  color: rgba(251, 130, 0, 1);
+  margin-bottom: 10px;
 }
 .product-description {
-    font-size: var(--text-xs);
-    line-height: 143%;
-    letter-spacing: 1.8%;
-    color: var(--text-muted);
-    font-family: var(--inter-font);
+  font-size: var(--text-xs);
+  line-height: 143%;
+  letter-spacing: 1.8%;
+  color: var(--text-muted);
+  font-family: var(--inter-font);
+}
+/* next page btn related style  */
+.next-page {
+  display: flex;
+  justify-content: right;
+  margin-top: 50px;
+}
+#next {
+  cursor: pointer;
+  color: #e02c6d;
 }
 /* responseve for small device */
 @media screen and (max-width: 576px) {
@@ -219,6 +230,17 @@ nav {
     flex-direction: column-reverse;
     text-align: center;
     gap: 20px;
+  }
+  .popular-card-box {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .popular-card  {
+    width: 95%;
+  }
+    .next-page {
+    justify-content: center;
   }
 }
 
@@ -248,5 +270,14 @@ nav {
     flex-direction: column-reverse;
     text-align: center;
     gap: 20px;
+  }
+  .popular-card-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .popular-card  {
+    width: 100%;
+  }
+    .next-page {
+    justify-content: center;
   }
 }
