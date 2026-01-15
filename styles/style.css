@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-    background-color: #aaaaaa1b;
+    background-color: #fff;
   font-family: "Poppins", sans-serif;
   /* font-family: "Inter", sans-serif; */
 }
@@ -73,7 +73,7 @@ nav {
     max-width: 582px;
 }
 .hero-title {
-    font-size: 3.8rem;
+    font-size: 3.25rem;
     font-weight: 700;
     line-height: 70px;
 }
@@ -91,4 +91,22 @@ nav {
 }
 .hero-image img {
     width: 100%;
+}
+
+/* responseve for small device */
+@media screen and (max-width: 576px) {
+    nav {
+        padding: 20px;
+        flex-direction: column;
+    }
+    .nav-menu {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    .hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+    }
 }
