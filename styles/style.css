@@ -10,16 +10,16 @@ body {
 /* key frame */
 @keyframes float-image {
   0% {
-    transform: translateX(0) rotate(-25deg);
+    transform: rotate(-25deg);
   }
   25% {
-    transform: translateX(0) rotate(-50deg);
+    transform: rotate(-50deg);
   }
   50% {
-    transform: translateY(0) rotate(-75deg);
+    transform: rotate(-75deg);
   }
   100% {
-    transform: translateX(0) rotate(100deg);
+    transform: rotate(100deg);
   }
 }
 :root {
@@ -85,16 +85,29 @@ nav {
   list-style: none;
   gap: 34px;
 }
+.nav-menu li {
+    transition: 0.3s ease-in-out;
+}
+.nav-menu li:hover {
+    transform: scale(1.6);
+}
 .nav-link {
   text-decoration: none;
   color: var(--text-body);
   font-size: 1rem;
   font-weight: 600;
 }
+.nav-link:hover {
+    color: #e02c6d;
+}
 .nav-title {
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--text-body);
+  transition: 0.3s ease-in;
+}
+.nav-title:hover {
+    color: #e02c6d;
 }
 
 /* hero section style start  */
@@ -145,6 +158,10 @@ nav {
 .our-partners img {
   width: 100%;
   cursor: pointer;
+  transition: 0.3s;
+}
+.our-partners img:hover {
+    transform: scale(1.5);
 }
 /* popular collection related style */
 .popular-collection {
@@ -171,6 +188,10 @@ nav {
 }
 .popular-card img {
   width: 100%;
+  transition: 0.3s ease-in-out;
+}
+.popular-card img:hover {
+    transform: scale(1.5);
 }
 .card-heading {
   line-height: 40px;
